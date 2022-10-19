@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+	
+@import 'base/null'
+@import 'base/ibg'
+
+
+body
+	font-family: "Lato"
+.container
+	max-width: 1130px
+	padding: 0 15px
+	margin: 0 auto
+
+.wrapper
+	overflow: hidden
+	min-height: 100%
+
+.page
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	display: flex
+	flex-direction: column
+
+.mainscreen
+	flex: 1 0 100%
+	position: relative
+	&__bg
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+
+.pageup 
+	position: fixed
+	bottom: 40px
+	right: 40px
+	width: 40px
+	height: 40px
+	cursor: pointer
+	display: none
+	border-radius: 100%
+	border: 2px solid #f7f7f7
+	&_show
+		fill: rgba(100,194,158,0.8)
+		display: block
+		&:hover 
+			fill: #848789
+	
+
+@import 'blocks/header'
+@import 'blocks/_about'
+@import 'blocks/_block'
+@import 'blocks/_brands'
+@import 'blocks/_slider'
+@import 'blocks/_shop'
+@import 'blocks/_subscribe'
+@import 'blocks/_footer'
